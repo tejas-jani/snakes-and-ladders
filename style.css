@@ -1,0 +1,364 @@
+body {
+    box-sizing: border-box;
+}
+
+#continer {
+    display: grid;
+    margin-top: 20px;
+    width: min-content;
+    /* height: 100vh; */
+    border: 3px solid yellow;
+    grid-template-rows: repeat(10, 40px);
+    grid-template-columns: repeat(10, 35px);
+    /* grid-gap: 1px; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    box-shadow: 5px 5px 16px rgb(133, 133, 133);
+}
+
+.diceMaterial {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: 70px;
+    padding: 5px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    /* border: 3px solid greenyellow; */
+    box-shadow: none;
+    /* background-color: aquamarine; */
+}
+#iconw1{
+font-weight: 400;
+font-size: 35px;
+  
+}
+#iconw2{
+font-weight: 400;
+font-size: 35px;
+    grid-row: -1/-1;
+grid-column: 3/4;
+}
+
+/* .diceBg{
+background-color: pink;
+
+} */
+
+
+.avatar {
+    border-radius: 6px;
+    margin: 2px;
+    /* border-color: #adff76; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+#avatar1 {
+    border: 5px solid #f7901bf6;
+    box-shadow: 4px 4px 16px #fffdfde7;
+
+    width: 75px;
+    height: 75px;
+}
+
+#avatar2 {
+    border: 5px solid #a5fd7cfa;
+    box-shadow: 4px 4px 16px #fffdfde7;
+
+    width: 55px;
+    height: 55px;
+}
+#win{
+    color: #424242c0;
+}
+#dice {
+    box-shadow: 4px 4px 19px #fffdfde7;
+
+    border: #c933f79f 4px solid;
+    border-radius: 16px;
+    cursor: pointer;
+    /* margin-top: 1px; */
+    width: 70px;
+    height: 70px;
+}
+#dice:hover{
+    /* width: 75px;
+    height: 75px; */
+    transition: all .2s ease-in-out; 
+
+ transform: scale(1.1); 
+
+}
+
+#main {
+    position: relative;
+    /* height: 100vh; */
+    width: max-content;
+    /* border: #3af10d 1px  solid; */
+    top: 2%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0); /*I don't no why but i try to remove this transpernt border my ladders and snacks are lost their posion*/
+    transform: translate(-50%);
+}
+
+button {
+    position: relative;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 16px rgb(240, 240, 240);
+    background-color: #dd2929;
+    /* top: 20%; */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.evenColor {
+    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(153, 153, 153); */
+    border: 1px solid black;
+}
+
+.oddColor {
+    background-color: rgb(255, 0, 0);
+    background-color: #00f921e3;
+    background-color:rgb(247, 255, 142);
+    background: linear-gradient(-45deg,#079ab4b9,#ff79d7c0);
+
+    border: 1px solid black;
+}
+
+#continer>div {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    /* color: #00000094; */
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(54, 53, 53);
+    background: linear-gradient(-120deg,#079ab4,#f81eb7);
+    background: linear-gradient(-120deg,#079ab4a8,#f81eb7a1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+
+
+/* ------------------------------------LADDER_POSITION------------------------------ */
+
+#L_2-38 {
+    /* rotate: 20px; */
+    position: fixed;
+    width: 40px;
+    height: 165px;
+    top: 261px;
+    z-index: 1;
+    left: 18%;
+    /* MDN */
+    /* transform: translate(-50%); */
+    transform: rotate(22deg);
+}
+
+#L_21-41 {
+    position: fixed;
+    filter: drop-shadow(0 0 8px black);
+    /* FF~35 */
+    filter: drop-shadow(0 0 0 8px black);
+    /* MDN */
+    width: 44px;
+    height: 120px;
+    top: 220px;
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 1%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(8deg);
+}
+
+#L_5-14 {
+    filter: drop-shadow(0 0 8px black);
+    /* FF~35 */
+    filter: drop-shadow(0 0 0 8px black);
+    /* MDN */
+    position: fixed;
+    width: 22px;
+    height: 92px;
+    top: 339px;
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 50%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(46deg);
+}
+
+#L_26-36 {
+    position: fixed;
+    width: 22px;
+    height: 52px;
+    top: 279px;
+    filter: drop-shadow(0 0 1px black);
+    /* FF~35 
+                    
+                     /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 49%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-45deg);
+}
+
+#L_34-84 {
+    position: fixed;
+    width: 28px;
+    height: 235px;
+    top: 60px;
+    filter: drop-shadow(0 0 1px black);
+    /* FF~35 
+                        
+                         /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 45%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-29deg);
+}
+
+#L_71-91 {
+    position: fixed;
+    width: 28px;
+    height: 100px;
+    top: 30px;
+    filter: drop-shadow(0 0 1px black);
+    /* FF~35 
+                            
+                             /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 92%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(7deg);
+}
+
+#L_61-82 {
+    position: fixed;
+    width: 48px;
+    height: 130px;
+    top: 54px;
+    filter: drop-shadow(0 0 1px black);
+    /* FF~35 
+                                
+                                 /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 5%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(4deg);
+}
+
+/* ------------------------------SNAKE_POSITION--------------------------- */
+
+#S_7-17 {
+    position: fixed;
+    width: 105px;
+    height: 43px;
+    top: 369px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 35%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(10deg);
+}
+
+#S_11-48 {
+    position: fixed;
+    width: 66px;
+    height: 151px;
+    top: 210px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 78%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-34deg);
+}
+
+#S_25-86 {
+    position: fixed;
+    width: 81px;
+    height: 261px;
+    top: 70px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 40%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-1deg);
+}
+
+#S_68-74 {
+    position: fixed;
+    width: 44px;
+    height: 70px;
+    top: 110px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 64%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-1deg);
+}
+
+#S_78-98 {
+    position: fixed;
+    width: 46px;
+    height: 90px;
+    top: 40px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 14%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-1deg);
+}
+
+#S_69-93 {
+    position: fixed;
+    width: 59px;
+    height: 120px;
+    top: 40px;
+    /* filter: drop-shadow(0 0 8px black);              /* FF~35  */
+    /* flip horizontally */
+    /* -webkit-transform: scaleX(180deg); */
+    z-index: 1;
+    left: 73%;
+    transform: scaleX(-1);
+    transform: translate(-50%);
+    transform: rotate(-35deg);
+}
