@@ -1,4 +1,4 @@
-console.log("tejas");
+ 
 
 /* creatBord() function create  complite game bord using grid in css bord  */
 
@@ -19,7 +19,7 @@ function creatBord() {
         temp = parseInt(end / 10);
         console.log(temp);
         if ((temp % 2) == 0) {
-            console.log("if" + end + start);
+           // console.log("if" + end + start);
 
             for (i = end; i <= start; i++) {
                 if (parseInt(i % 2) == 0)
@@ -27,12 +27,12 @@ function creatBord() {
                 else
                     Cls = `class="oddColor"`
                 data += `<div  ${Cls}  id="${i}">${i}</div>`
-                console.log(Cls);
+              //  console.log(Cls);
 
             }   
         }
         else {
-            console.log("else");
+           // console.log("else");
 
             for (i = start; i >= end; i--) {
 
