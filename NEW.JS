@@ -1,11 +1,6 @@
  
 
-/* creatBord() function create  complite game bord using grid in css bord  */
-
-
-function playersName(){
-  
-}
+ // creatBord() Create a complete game board using CSS grid.  
 function creatBord() {
     let container = document.getElementById("continer");
     let data = "";
