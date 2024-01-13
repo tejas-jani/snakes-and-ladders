@@ -332,7 +332,6 @@ body {
   top: 10px;
   left: 10px;
   text-align: center;
-  font-family: monospace;
-
+  font-family: monospace; 
   -webkit-animation: blink 0.5s step-end infinite alternate;
 }
