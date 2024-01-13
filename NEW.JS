@@ -4,7 +4,7 @@ function creatBord() {
     let data = "";
     let start = 100;
 
-    let end = 91;
+    let end = 91; 
     let loop = 1;
     let temp;
     let Cls;
